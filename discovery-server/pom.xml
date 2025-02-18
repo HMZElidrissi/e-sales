@@ -9,18 +9,43 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ma.hmzelidrissi</groupId>
-    <artifactId>e-sales</artifactId>
+    <artifactId>discovery-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>e-sales</name>
-    <packaging>pom</packaging>
-    <description>e-sales</description>
-
+    <name>discovery-server</name>
+    <description>discovery-server</description>
+    <url/>
+    <licenses>
+        <license/>
+    </licenses>
+    <developers>
+        <developer/>
+    </developers>
+    <scm>
+        <connection/>
+        <developerConnection/>
+        <tag/>
+        <url/>
+    </scm>
     <properties>
         <java.version>17</java.version>
-        <spring-cloud.version>2023.0.3</spring-cloud.version>
-        <spring-boot.version>3.4.1</spring-boot.version>
+        <spring-cloud.version>2024.0.0</spring-cloud.version>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -33,31 +58,11 @@
         </dependencies>
     </dependencyManagement>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
