@@ -11,7 +11,7 @@ spring:
       server:
         native:
           search-locations:
-            - file:./mailflow-config
+            - file:./esales-config
         git:
           uri: https://github.com/HMZElidrissi/esales-config
           default-label: main
