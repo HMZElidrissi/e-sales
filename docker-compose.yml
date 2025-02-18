@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: esales_postgres
+    environment:
+      POSTGRES_USER: esales
+      POSTGRES_PASSWORD: password
+      PGDATA: /data/postgres
+    volumes:
+      - esales_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - esales
+    restart: unless-stopped
+
+networks:
+  esales:
+    driver: bridge
+
+volumes:
+  esales_data:
