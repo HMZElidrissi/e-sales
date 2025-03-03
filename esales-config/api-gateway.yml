@@ -16,3 +16,7 @@ spring:
           uri: lb:http://payment-service
           predicates:
             - Path=/api/v1/payments/**,/api/v1/webhook
+        - id: payment-service
+          uri: lb:http://stock-service
+          predicates:
+            - Path=/api/v1/categories/**,/api/v1/product/**,/api/v1/stock/**

@@ -1,9 +1,11 @@
 server:
-  port: 8086
+  port: 8087
 
 spring:
+  application:
+    name: stock-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/payment_db
+    url: jdbc:postgresql://localhost:5433/stock_db
     username: esales
     password: password
     driver-class-name: org.postgresql.Driver
@@ -16,8 +18,5 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-stripe:
-  api:
-    key: sk_test_1234567890
-  webhook:
-    secret: whsec_1234567890
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
