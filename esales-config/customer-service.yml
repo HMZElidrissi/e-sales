@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://e-sales:e-sales@localhost:27017/customers?authSource=admin
