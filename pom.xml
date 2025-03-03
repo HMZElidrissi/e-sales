@@ -21,6 +21,14 @@
         <spring-boot.version>3.4.1</spring-boot.version>
     </properties>
 
+    <modules>
+        <module>stock-service</module>
+        <module>discovery-server</module>
+        <module>payment-service</module>
+        <module>config-server</module>
+        <module>customer</module>
+    </modules>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
