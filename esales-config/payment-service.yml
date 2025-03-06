@@ -18,6 +18,6 @@ spring:
 
 stripe:
   api:
-    key: sk_test_1234567890
+    key: sk_test_51OgSVtJlpbq6UejmrPbiCAgoactTJVGD2dzdBCahwR5AfsG8Ox2FzWjsV2BR3mDM3y4ADHloSoxn0ZF3kc51hpub00uGijO8HQ
   webhook:
-    secret: whsec_1234567890
+    secret: whsec_2ce22d5f9d5f5de24fc059103035bbf64fd1f618c1c3a7485bd8ab966ac6563a
